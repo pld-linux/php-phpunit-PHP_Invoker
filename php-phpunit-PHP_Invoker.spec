@@ -3,21 +3,22 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Utility class for invoking callables with a timeout
 Name:		php-phpunit-PHP_Invoker
-Version:	1.0.0
+Version:	1.1.0
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	4497829dadcad7ba1992c085716b3963
+# Source0-md5:	d18d1595f2722c6dd2e6f3cd68a04712
 URL:		http://pear.phpunit.de/package/PHP_Invoker/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-channel(pear.phpunit.de)
 Requires:	php-pcntl
 Requires:	php-pear
+Requires:	php-phpunit-PHP_Timer >= 1.0.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
