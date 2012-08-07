@@ -4,7 +4,7 @@
 Summary:	%{pearname} - Utility class for invoking callables with a timeout
 Name:		php-phpunit-PHP_Invoker
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
@@ -15,8 +15,8 @@ BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR >= 1:1.9.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.580
+Requires:	php(pcntl)
 Requires:	php-channel(pear.phpunit.de)
-Requires:	php-pcntl
 Requires:	php-pear
 Requires:	php-phpunit-PHP_Timer >= 1.0.1
 BuildArch:	noarch
