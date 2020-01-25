@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	PHP_Invoker
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Utility class for invoking callables with a timeout
 Name:		php-phpunit-PHP_Invoker
 Version:	1.1.3
